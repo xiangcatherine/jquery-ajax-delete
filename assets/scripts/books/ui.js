@@ -8,11 +8,16 @@ const onSuccess = function (data) {
   }
 }
 
+const onDeleteSuccess = function (data) {
+  console.log('the book was deleted!')
+}
+
 const onError = function (response) {
   console.error(response)
 }
 
 module.exports = {
   onSuccess,
-  onError
+  onError,
+  onDeleteSuccess
 }
